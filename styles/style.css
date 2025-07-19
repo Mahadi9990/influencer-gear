@@ -98,11 +98,22 @@ body {
   border-radius: 20px;
 }
 
+/* logo area  */
+
 main .logo_area {
   max-width: 1000px;
   justify-content: space-evenly;
   align-items: center;
   margin: 50px auto ;
+}
+
+/* card area  */
+
+.card_all_content {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  position: relative;
 }
 .card_title{
   text-align: center;
@@ -148,4 +159,16 @@ main .logo_area {
 .card_area .card_item p{
     font-size: 0.8rem;
     font-weight: 400;
+}
+
+.right_btn {
+  color: #E02C6D;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  font-size: 1rem;
+  font-weight: bold;
 }
