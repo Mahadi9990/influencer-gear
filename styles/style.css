@@ -44,11 +44,16 @@ body {
 }
 
 /* header area */
-
+.menu_icon ,.shop_logo {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
 .nav_area {
   max-width: 1400px;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   margin: 30px 110px;
 }
 .nav_area .logo {
@@ -199,6 +204,8 @@ main .logo_area {
   margin: 20px auto;
 }
 
+/* fotter area */
+
 footer {
   background-color: #0A0826;
   color: white;
@@ -227,4 +234,41 @@ footer ul li {
 footer ul li a{
   font-size: 20px;
   color: white;
+}
+
+
+
+/* responsive start */
+
+@media (max-width: 576px) {
+  .menu_icon , .shop_logo {
+    display: block;
+    text-align: left;
+  }
+  .nav_area {
+    justify-content: space-between;
+  }
+  .nav_area h3 {
+    font-size: 1rem;
+  }
+  header .nav_area ul{
+   display:none
+  }
+  .hero_area {
+    flex-direction: column;
+    text-align: center;
+  }
+  .logo_area {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .card_area {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .features {
+    flex-direction: column;
+    text-align: center;
+  }
 }
