@@ -172,3 +172,58 @@ main .logo_area {
   font-size: 1rem;
   font-weight: bold;
 }
+
+/* features area */
+
+.features {
+  max-width: 1100px;
+  margin: 50px auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.features .content_area {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+.features .content_area h1{
+  font-size: 2rem;
+  margin: 20px auto;
+}
+.features .content_area p{
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 20px auto;
+}
+
+footer {
+  background-color: #0A0826;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  list-style: none;
+}
+footer p{
+  font-size: 1rem;
+  margin: 10px 0;
+}
+footer ul li {
+  border-radius: 50%;
+  background-color: #c2b2b254;;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+}
+footer ul li a{
+  font-size: 20px;
+  color: white;
+}
