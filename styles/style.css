@@ -1,0 +1,151 @@
+/* complet google font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dflex {
+  display: flex;
+}
+
+.btn_primary {
+  background-color: #E02C6D;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn_primary:hover {
+  background-color: #ff4c4c;
+}
+
+:root {
+  --primary-color: #3A3A3A;
+  --secondary-color: #f0f0f0;
+  --text-color: #333;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+/* header area */
+
+.nav_area {
+  max-width: 1400px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 110px;
+}
+.nav_area .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.nav_area nav ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: right;
+  list-style: none;
+  gap: 34px;
+}
+.nav_area nav ul li {
+    cursor: pointer;
+}
+.nav_area nav ul li a{
+  font-size: 1rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.hero_area {
+  text-align: center;
+  justify-content: space-around;
+   align-items: center;
+   margin: 50px auto;  
+}
+.hero_area .content{
+    text-align: left;
+    flex-direction: column;
+    gap: 20px;
+}
+.hero_area .content h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+.hero_area .content p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.hero_area .content button {
+  width: 150px;
+  border-radius: 20px;
+}
+
+main .logo_area {
+  max-width: 1000px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px auto ;
+}
+.card_title{
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin: 80px auto 40px;
+}
+.card_area {
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(3 ,1fr);
+  gap: 10px;
+  text-align: left;
+  place-items: center;
+  margin: 50px auto;
+}
+.card_area .card_item{
+    padding: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+                -10px -10px 20px rgba(255, 255, 255, 0.1);
+}
+.card_area .card_item h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.card_area .card_item h4{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.card_area .card_item .star_area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card_area .card_item .star i{
+    color: #dfa018;
+}
+.card_area .card_item .star_area .text p{
+    
+    color: red;
+    text-align: left;
+}
+.card_area .card_item p{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
