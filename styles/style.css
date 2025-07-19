@@ -264,11 +264,46 @@ footer ul li a{
     gap: 40px;
   }
   .card_area {
-    grid-template-columns: 1fr;
+  grid-template-columns: repeat(1 ,1fr);
     gap: 10px;
   }
   .features {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+/* 576 to 759 */
+
+@media (min-width: 577px) and (max-width: 750px) {
+  .menu_icon , .shop_logo {
+    display: block;
+    text-align: left;
+  }
+  .hero_area {
+    flex-direction: column;
+    text-align: center;
+  }
+  header .nav_area ul{
+    display:none
+  }
+  .logo_area {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .card_area {
+  grid-template-columns: repeat(1 ,1fr);
+    gap: 10px;
+  }
+  .features {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+  @media (min-width: 751px) and (max-width: 1000px) {
+    .card_area {
+  grid-template-columns: repeat(2 ,1fr);
+    gap: 10px;
   }
 }
